@@ -1,4 +1,4 @@
-    * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,8 +7,9 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
+  color: #e0e0e0;
+  background-color: #121212;
+  cursor: url('scissors.png'), auto;
 }
 
 .container {
@@ -19,29 +20,41 @@ body {
 }
 
 .header {
-  background: #111;
+  background: #1f1f1f;
   color: #fff;
-  padding: 1rem 0;
+  padding: 0.5rem 1rem; /* Adjusted padding for cleaner fit */
+  display: flex; /* Align logo and nav on the same line */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Center logo and nav vertically */
 }
 
 .header .logo {
-  font-size: 1.8rem;
+  font-size: 2.5rem; /* Adjusted logo size */
   font-weight: bold;
+  margin: 0; /* Ensure no extra margin */
 }
 
 .nav {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
+  display: flex; /* Keep nav items in a row */
+  gap: 1rem; /* Space between nav links */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
 }
 
 .nav a {
-  color: #fff;
+  color: #ddd;
   text-decoration: none;
 }
 
+.nav a:hover {
+  color: #c59d5f;
+}
+
+
+
+
 .hero {
-  background: url('banner1.png') no-repeat center center/cover;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner1.png') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 6rem 1rem;
@@ -63,11 +76,11 @@ body {
 }
 
 .about, .services, .contact {
-  background-color: #fff;
+  background-color: #1e1e1e;
   margin: 2rem 0;
   padding: 2rem 0;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .services ul {
@@ -78,12 +91,13 @@ body {
 .services li {
   padding: 0.5rem 0;
   font-size: 1.1rem;
+  color: #ccc;
 }
 
 .footer {
   text-align: center;
-  background: #111;
-  color: #aaa;
+  background: #1f1f1f;
+  color: #777;
   padding: 1rem 0;
   font-size: 0.9rem;
 }
